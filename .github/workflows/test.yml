@@ -35,7 +35,20 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - uses: github/codeql-action/upload-sarif@v3
+      # Upload the first SARIF file
+      - name: Upload SARIF file 1
+        uses: github/codeql-action/upload-sarif@v3
         with:
-          # Path to SARIF file relative to the root of the repository
-          sarif_file: results.sarif
+          sarif_file: sarif-reports\database-5a7786812dd4-2024-01-11.sarif
+
+      # # Upload the second SARIF file
+      # - name: Upload SARIF file 2
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: sarif-reports\database-a632c89dd778-2024-06-07.sarif
+
+      # # Upload the third SARIF file
+      # - name: Upload SARIF file 3
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: sarif-reports\database-b8b8ebcf851d-2017-04-11.sarif
