@@ -39,7 +39,7 @@ jobs:
       - name: Upload SARIF file 1
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: sarif-reports\database-5a7786812dd4-2024-01-11.sarif
+          sarif_file: sarif-reports/database-5a7786812dd4-2024-01-11.sarif
 
       # # Upload the second SARIF file
       # - name: Upload SARIF file 2
